@@ -1,13 +1,11 @@
 /* Variables */
 
 /* Fonts */
-
 $font-family-primary: 'Kanit', sans-serif;
 $font-family-secondary: 'Fira Sans', sans-serif;
 $font-family-titlename: 'Ms Madi', cursive;
 
 /* Colors */
-
 $color-base: #0198E7;
 $color-primary: #000;
 $color-secondary: #fff;
@@ -18,7 +16,6 @@ $color-text-heading: rgba(0, 0, 0, 0.747);
 $color-text-paragraph: #7b7b7b;
 
 /* Button */
-
 button {
 	background-color: $color-nav-button;
 	color: $color-secondary;
@@ -32,11 +29,9 @@ button {
 }
 
 /* transition */
-
 $transition: .5s;
 
 /* global */
-
 body {
 	background: $color-primary;
 	margin: 0;
@@ -51,7 +46,6 @@ body {
 }
 
 /* nav */
-
 nav .container {
 	background-image: url('https://cdn.pixabay.com/photo/2016/02/18/00/34/microphone-1206364_1280.jpg');
 	background-size: cover;
@@ -106,7 +100,6 @@ nav .container {
 }
 
 /* splash */
-
 .splash {
 	display: flex;
 	min-height: 400px;
@@ -148,4 +141,63 @@ nav .container {
             }
         }
 	}
+}
+/* services */
+
+.services .container {
+	min-height: 400px;
+    padding: 96px 0;
+
+	.row {
+		justify-content: center;
+
+		.col {
+            padding: 20px;
+			text-align: center;
+
+			h1 {
+                color: $color-text-heading;
+				font-size: 40px;
+				margin: 0;
+			}
+
+            p {
+                color: $color-text-paragraph;
+                margin-top: -5px;
+                margin-bottom: 40px;
+            }
+		}
+        .header {
+            padding-top: 0;
+        }
+	}
+
+    .card {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.747);
+        .text-main {
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+    
+        .text-other {
+            margin-top: 8px;
+            color: $color-text-paragraph;
+        }     
+    }
+
+    i {
+        font-size:40px;
+        width: 80px;
+        height: 80px;
+        border: 3px solid #fed136;
+        border-radius: 50%;
+        text-align: center;
+        color: #fed136;
+    }
+
+    .fas.fa-shopping-basket, .fa-laptop-code, .fa-lock {
+        line-height: 75px;
+    }
 }
