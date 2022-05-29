@@ -33,6 +33,7 @@ button {
 /* transition */
 
 $transition: .5s;
+$transition-nav: all 0.8s ease-in-out;
 
 /* global */
 
@@ -65,41 +66,50 @@ nav .container {
             font-family: $font-family-titlename;
             font-size: 28px;
             font-weight: bold;
-        }
-
-		a {
-            font-family: $font-family-secondary;
-			margin-top: 8px;
-			text-decoration: none;
-			color: $color-nav-titlename;
-			font-size: 26px;
+            text-decoration: none;
+            color: $color-nav-titlename;
             transition: $transition;
-            
+            align-self: center;
+
             &:hover {
                 color: $color-nav-titlename-hover;
             }
-		}
+        }
 
 		ul {
 			padding: 0;
-			list-style-type: none;
-
+            
 			li {
 				display: inline-block;
 				padding: 0 18px;
-				text-align: center;
 
-				a {
-					transition: $transition;
-					font-size: 15px;
-					text-transform: uppercase;
-					text-decoration: none;
-					color: $color-secondary;
-
-					&:hover {
-						color: $color-nav-titlename-hover;
-					}
-				}
+                a {
+                    text-decoration: none;
+                    color: $color-secondary;
+                    font-size: 15px;
+                    transition: $transition-nav;
+                    position: relative;
+                    text-transform: uppercase;
+            
+                    &::before {
+                        content: attr(data-item);
+                        transition: 0.5s;
+                        color: $color-nav-titlename;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        width: 0;
+                        overflow: hidden;
+                    }
+            
+                    &:hover {
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+                }
 			}
 		}
 	}
