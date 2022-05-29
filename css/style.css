@@ -1,3 +1,118 @@
+/* Variables */
+/* Fonts */
+/* Colors */
+/* Button */
+button {
+  background-color: #FED136;
+  color: #fff;
+  padding: 18px 41px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
 
+/* transition */
+/* global */
+body {
+  background: #000;
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #fff;
+  padding-bottom: 96px;
+}
+
+/* nav */
+nav .container {
+  background-image: url("https://cdn.pixabay.com/photo/2016/02/18/00/34/microphone-1206364_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+nav .container .row {
+  justify-content: space-around;
+  padding: 20px;
+}
+nav .container .row a.title {
+  font-family: "Ms Madi", cursive;
+  font-size: 28px;
+  font-weight: bold;
+}
+nav .container .row a {
+  font-family: "Fira Sans", sans-serif;
+  margin-top: 8px;
+  text-decoration: none;
+  color: #FED136;
+  font-size: 26px;
+  transition: 0.5s;
+}
+nav .container .row a:hover {
+  color: rgba(254, 211, 54, 0.6588235294);
+}
+nav .container .row ul {
+  padding: 0;
+  list-style-type: none;
+}
+nav .container .row ul li {
+  display: inline-block;
+  padding: 0 18px;
+  text-align: center;
+}
+nav .container .row ul li a {
+  transition: 0.5s;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+nav .container .row ul li a:hover {
+  color: rgba(254, 211, 54, 0.6588235294);
+}
+
+/* splash */
+.splash {
+  display: flex;
+  min-height: 400px;
+}
+.splash .splash-inner {
+  margin: auto;
+  margin-top: 104px;
+  color: #fff;
+  position: relative;
+}
+.splash .splash-inner h1 {
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 0;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+}
+.splash .splash-inner p {
+  font-size: 58px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 900;
+  font-style: normal;
+}
+.splash .splash-inner .button-one {
+  font-size: 18px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+.splash .splash-inner .button-one:hover {
+  background: rgba(254, 211, 54, 0.6588235294);
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBRUEsVUFBQTtBQU1BLFdBQUE7QUFXQSxXQUFBO0FBRUE7RUFDQyx5QkFQa0I7RUFRbEIsV0FYaUI7RUFZakIsa0JBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0VBQ0EseUJBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBQUE7QUNoQkQ7O0FEbUJBLGVBQUE7QUFJQSxXQUFBO0FBRUE7RUFDQyxnQkE3QmU7RUE4QmYsU0FBQTtFQUNHLGdDQXRDa0I7QUNrQnRCOztBRHVCQTtFQUNDLGlCQUFBO0VBQ0EsY0FBQTtFQUNBLGdCQXBDaUI7RUFxQ2pCLG9CQUFBO0FDcEJEOztBRHVCQSxRQUFBO0FBRUE7RUFDQyxtR0FBQTtFQUNBLHNCQUFBO0VBQ0EsMkJBQUE7RUFDQSxpQkFBQTtBQ3JCRDtBRHVCQztFQUNDLDZCQUFBO0VBQ0EsYUFBQTtBQ3JCRjtBRHVCUTtFQUNJLCtCQTNEWTtFQTREWixlQUFBO0VBQ0EsaUJBQUE7QUNyQlo7QUR1QkU7RUFDVSxvQ0FqRVk7RUFrRXJCLGVBQUE7RUFDQSxxQkFBQTtFQUNBLGNBNURtQjtFQTZEbkIsZUFBQTtFQUNTLGdCQXhDQztBQ21CYjtBRHVCWTtFQUNJLHVDQWhFWTtBQzJDNUI7QUR5QkU7RUFDQyxVQUFBO0VBQ0EscUJBQUE7QUN2Qkg7QUR5Qkc7RUFDQyxxQkFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtBQ3ZCSjtBRHlCSTtFQUNDLGdCQXpEUTtFQTBEUixlQUFBO0VBQ0EseUJBQUE7RUFDQSxxQkFBQTtFQUNBLFlBQUE7QUN2Qkw7QUR5Qks7RUFDQyx1Q0FyRnNCO0FDOEQ1Qjs7QUQrQkEsV0FBQTtBQUVBO0VBQ0MsYUFBQTtFQUNBLGlCQUFBO0FDN0JEO0FEK0JDO0VBQ0MsWUFBQTtFQUNBLGlCQUFBO0VBQ0EsV0F4R2dCO0VBeUdoQixrQkFBQTtBQzdCRjtBRCtCRTtFQUNDLFdBNUdlO0VBNkdmLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtBQzdCSDtBRGdDRTtFQUNDLGVBQUE7RUFDQSxlQUFBO0VBQ0EseUJBQUE7RUFDQSxtQkFBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7QUM5Qkg7QURpQ1E7RUFDSSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxTQUFBO0VBQ0EsU0FBQTtFQUNBLGdDQUFBO0VBQ0EsZ0JBNUdDO0FDNkViO0FEaUNZO0VBQ0ksNENBcElZO0FDcUc1QiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */

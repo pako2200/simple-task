@@ -1,0 +1,151 @@
+/* Variables */
+
+/* Fonts */
+
+$font-family-primary: 'Kanit', sans-serif;
+$font-family-secondary: 'Fira Sans', sans-serif;
+$font-family-titlename: 'Ms Madi', cursive;
+
+/* Colors */
+
+$color-base: #0198E7;
+$color-primary: #000;
+$color-secondary: #fff;
+$color-nav-titlename: #FED136;
+$color-nav-titlename-hover: #fed336a8;
+$color-nav-button: #FED136;
+$color-text-heading: rgba(0, 0, 0, 0.747);
+$color-text-paragraph: #7b7b7b;
+
+/* Button */
+
+button {
+	background-color: $color-nav-button;
+	color: $color-secondary;
+	padding: 18px 41px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+/* transition */
+
+$transition: .5s;
+
+/* global */
+
+body {
+	background: $color-primary;
+	margin: 0;
+    font-family:$font-family-primary;
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+	background: $color-secondary;
+	padding-bottom: 96px;
+}
+
+/* nav */
+
+nav .container {
+	background-image: url('https://cdn.pixabay.com/photo/2016/02/18/00/34/microphone-1206364_1280.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 500px;
+
+	.row {
+		justify-content: space-around;
+		padding: 20px;
+
+        a.title {
+            font-family: $font-family-titlename;
+            font-size: 28px;
+            font-weight: bold;
+        }
+		a {
+            font-family: $font-family-secondary;
+			margin-top: 8px;
+			text-decoration: none;
+			color: $color-nav-titlename;
+			font-size: 26px;
+            transition: $transition;
+            
+            &:hover {
+                color: $color-nav-titlename-hover;
+            }
+		}
+
+		ul {
+			padding: 0;
+			list-style-type: none;
+
+			li {
+				display: inline-block;
+				padding: 0 18px;
+				text-align: center;
+
+				a {
+					transition: $transition;
+					font-size: 15px;
+					text-transform: uppercase;
+					text-decoration: none;
+					color: white;
+
+					&:hover {
+						color: $color-nav-titlename-hover;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* splash */
+
+.splash {
+	display: flex;
+	min-height: 400px;
+
+	.splash-inner {
+		margin: auto;
+		margin-top: 104px;
+		color: $color-secondary;
+		position: relative;
+
+		h1 {
+			color: $color-secondary;
+			font-size: 34px;
+			margin-bottom: 0;
+			text-align: center;
+			font-style: italic;
+			font-weight: 400;
+		}
+
+		p {
+			font-size: 58px;
+			margin-top: 5px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 900;
+			font-style: normal;
+		}
+
+        .button-one {
+            font-size: 18px;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translate(-50%, -50%);
+            transition: $transition;
+            
+            &:hover {
+                background: $color-nav-titlename-hover;
+            }
+        }
+	}
+}
