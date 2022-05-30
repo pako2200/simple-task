@@ -12,32 +12,32 @@ $color-secondary: #fff;
 $color-nav-titlename: #FED136;
 $color-nav-titlename-hover: #fed336a8;
 $color-nav-button: #FED136;
-$color-nav-button-hover: rgb(194, 161, 52);
+$color-nav-button-hover: #c2a134;
 $color-portfolio-background: #f7f7f7;
-$color-text-heading: rgba(0, 0, 0, 0.747);
+$color-text-heading: #404040;
 $color-text-paragraph: #7b7b7b;
 $color-icon: #fed136;
 
 /* transition */
 
 $transition: .5s;
-$transition-nav: all 0.8s ease-in-out;
-$transition-button:  0.6s;
-$transition-icons: all 0.3s linear;
+$transition-nav: .8s ease-in-out;
+$transition-button: .6s;
+$transition-icons: .3s linear;
 
 /* global */
 
 body {
-	background: $color-primary;
-	margin: 0;
+    background: $color-primary;
+    margin: 0;
     font-family: $font-family-primary;
 }
 
 .container {
-	max-width: 1400px;
-	margin: 0 auto;
-	background: $color-secondary;
-	padding-bottom: 96px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: $color-secondary;
+    padding-bottom: 96px;
 }
 
 .row {
@@ -48,15 +48,15 @@ body {
 /* nav */
 
 nav .container {
-	background-image: url('https://cdn.pixabay.com/photo/2016/02/18/00/34/microphone-1206364_1280.jpg');
-	background-size: cover;
-	background-position: center;
-	min-height: 500px;
-
-	.row {
-		justify-content: space-around;
-		padding: 20px;
-
+    background-image: url('https://cdn.pixabay.com/photo/2016/02/18/00/34/microphone-1206364_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    
+    .row {
+        justify-content: space-around;
+        padding: 20px;
+        
         a.title {
             font-family: $font-family-titlename;
             font-size: 28px;
@@ -65,19 +65,19 @@ nav .container {
             color: $color-nav-titlename;
             transition: $transition;
             align-self: center;
-
+            
             &:hover {
                 color: $color-nav-titlename-hover;
             }
         }
-
-		ul {
-			padding: 0;
+        
+        ul {
+            padding: 0;
             
-			li {
-				display: inline-block;
-				padding: 0 18px;
-
+            li {
+                display: inline-block;
+                padding: 0 18px;
+                
                 a {
                     text-decoration: none;
                     color: $color-secondary;
@@ -85,7 +85,7 @@ nav .container {
                     transition: $transition-nav;
                     position: relative;
                     text-transform: uppercase;
-            
+                    
                     &::before {
                         content: attr(data-item);
                         transition: 0.5s;
@@ -98,7 +98,7 @@ nav .container {
                         width: 0;
                         overflow: hidden;
                     }
-            
+                    
                     &:hover {
                         &::before {
                             width: 100%;
@@ -220,11 +220,13 @@ nav .container {
 	.row {
 		justify-content: center;
 
-		.col {
-            padding: 20px;
-			text-align: center;
+		.header-text {
+            padding-bottom: 30px;
+            text-align: center;
 
-			h1 {
+			h2 {
+                text-transform: uppercase;
+                letter-spacing: 2px;
                 color: $color-text-heading;
 				font-size: 40px;
 				margin: 0;
@@ -236,10 +238,6 @@ nav .container {
                 margin-bottom: 40px;
             }
 		}
-
-        .header-text {
-            padding-top: 0;
-        }
 	}
 
     .card {
@@ -285,7 +283,7 @@ nav .container {
     .row {
         justify-content: center;
 
-        .col h1 {
+        .col h2 {
             color: $color-text-heading;
             font-size: 40px;
             margin: 0;
@@ -355,6 +353,7 @@ footer .container {
     .row {
         justify-content: center;
         padding: 20px 0;
+        align-items: center;
     }
 
     p {
