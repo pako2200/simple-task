@@ -57,7 +57,7 @@ nav .container {
         justify-content: space-around;
         padding: 20px;
         
-        a.title {
+        .title {
             font-family: $font-family-titlename;
             font-size: 28px;
             font-weight: bold;
@@ -162,18 +162,18 @@ nav .container {
                 
                 &:hover {
                     
-                    &:after {
+                    &::after {
                         opacity: 1;
                         transform: translateY(0) rotateX(0);
                     }
                     
-                    &:before {
+                    &::before {
                         opacity: 0;
                         transform: translateY(50%) rotateX(90deg);
                     }
                 }
                 
-                &:after {
+                &::after {
                     top: 0;
                     left: 0;
                     opacity: 0;
@@ -190,7 +190,7 @@ nav .container {
                     transform: translateY(-50%) rotateX(90deg);          
                 }
                 
-                &:before {
+                &::before {
                     top: 0;
                     left: 0;
                     opacity: 1;
@@ -244,6 +244,17 @@ nav .container {
         text-align: center;
         color: $color-text-heading;
         
+        i {
+            font-size: 40px;
+            width: 80px;
+            height: 80px;
+            border: 3px solid $color-icon;
+            border-radius: 50%;
+            text-align: center;
+            color: $color-icon;
+            line-height: 75px;
+        }
+        
         .text-main {
             margin-top: 5px;
             margin-bottom: 0;
@@ -255,20 +266,6 @@ nav .container {
             font-size: 15px;
             color: $color-text-paragraph;
         }
-    }
-    
-    i {
-        font-size:40px;
-        width: 80px;
-        height: 80px;
-        border: 3px solid $color-icon;
-        border-radius: 50%;
-        text-align: center;
-        color: $color-icon;
-    }
-    
-    .fas.fa-shopping-basket, .fa-laptop-code, .fa-lock {
-        line-height: 75px;
     }
 }
 
@@ -283,7 +280,7 @@ nav .container {
     .row {
         justify-content: center;
         
-        .col h2 {
+        h2 {
             color: $color-text-heading;
             font-size: 40px;
             margin: 0;
@@ -292,9 +289,9 @@ nav .container {
             letter-spacing: 2px;
         }
         
-        .col p {
+        p {
             font-size: 16px;
-            margin-top: -5px;
+            margin-top: 0;
             margin-bottom: 65px;
             color: $color-text-paragraph;
             font-size: 16px;
@@ -320,30 +317,30 @@ nav .container {
                     }
                 }
             }
-        }
-        
-        .card .card-body {
-            background: $color-secondary;
-            margin-top: -6px;
-            padding: 18px 0;
-            margin-bottom: 30px;
             
-            h3 {
-                font-size: 20px;
-                margin: 0;
-                color: $color-text-heading;
-            }
-            
-            p {
-                font-size: 13px;
-                margin: -3px;
-                color: $color-text-paragraph;
-                padding-bottom: 7px;
-                font-size: 16px;
+            .card-body {
+                background: $color-secondary;
+                padding: 18px 0;
+                margin-bottom: 30px;
+                
+                h3 {
+                    font-size: 20px;
+                    margin: 0;
+                    color: $color-text-heading;
+                }
+                
+                p {
+                    font-size: 13px;
+                    margin: -3px;
+                    color: $color-text-paragraph;
+                    padding-bottom: 7px;
+                    font-size: 16px;
+                }
             }
         }
     }
 }
+
 /* footer */
 
 footer .container {
@@ -354,15 +351,14 @@ footer .container {
         padding: 20px 0;
         align-items: center;
     }
-
+    
     p {
         font-size: 15px;
         color: $color-text-paragraph;
     }
     
-    .footer-inner ul {
+    ul {
         padding-left: 50px;
-        text-align: left;
         
         li {
             font-size: 0;
@@ -379,7 +375,7 @@ footer .container {
                 margin: 2px;
             }
             
-            a i {
+            i {
                 transition: $transition-icons;
                 width: 40px;
                 height: 40px;
@@ -417,7 +413,7 @@ footer .container {
         .button-box {
             top: 165%;
             
-            .flip:before {
+            .flip::before {
                 font-size: 19px;
             }
         }
@@ -464,7 +460,7 @@ footer .container {
         .button-box {
             top: 135%;
             
-            .flip:before {
+            .flip::before {
                 font-size: 15px;
                 padding: 12px 25px;
             }
@@ -482,7 +478,7 @@ footer .container {
             width: 150px;
         }
         
-        .footer-inner ul {
+        ul {
             padding-left: 0;
             text-align: center;
         }
@@ -502,7 +498,7 @@ footer .container {
             width: 150px; 
             margin-left: -30px;
         }
-        .footer-inner ul {
+        ul {
             display: flex;
             flex-direction: row;
             padding-left: 0;
@@ -528,7 +524,7 @@ footer .container {
         .button-box {
             top: 135%;
             
-            .flip:before {
+            .flip::before {
                 font-size: 15px;
                 padding: 12px 15px;
             }
