@@ -28,7 +28,6 @@ $transition-icons: .3s linear;
 /* global */
 
 body {
-    background: $color-primary;
     margin: 0;
     font-family: $font-family-primary;
 }
@@ -36,7 +35,6 @@ body {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    background: $color-secondary;
     padding-bottom: 96px;
 }
 
@@ -47,13 +45,13 @@ body {
 
 /* nav */
 
-nav .container {
+nav {
     background-image: url('https://cdn.pixabay.com/photo/2016/02/18/00/34/microphone-1206364_1280.jpg');
     background-size: cover;
     background-position: center;
     min-height: 500px;
-    
-    .row {
+
+    .nav-box {
         justify-content: space-around;
         padding: 20px;
         
@@ -271,7 +269,7 @@ nav .container {
 
 /* portfolio */
 
-.portfolio .container {
+.portfolio {
     text-align: center;
     background: $color-portfolio-background;
     min-height: 900px;
